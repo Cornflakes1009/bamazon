@@ -1,5 +1,5 @@
 # bamazon
 
-![Alt Text](bamazonGIF.gif)
+![Bamazon GIF](bamazonGIF.gif)
 
 
