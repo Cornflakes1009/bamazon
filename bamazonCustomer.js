@@ -48,6 +48,7 @@ function purchaseProduct() {
           // also not checking if a valid quantity has been placed - will tell not enough product if you type in a character that's not a number
         } else {
           var productData = data[0];
+        
           if (input.quantity <= productData.stock_quantity) {
             var updateQueryStr = 'UPDATE products SET stock_quantity = ' + (productData.stock_quantity - input.quantity) + ' WHERE item_id = ' + input.item_id;
             connection.query(updateQueryStr, function (err, data) {
